@@ -1,0 +1,202 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary-white: #ff7177;
+  --color-primary-red: #ff565d;
+  --color-complementary-yellow: #ffb126;
+  --color-complementary-yellow-white: #ffc740;
+  --color-complementary-green: #00c987;
+  --color-complementary-green-white: #09dd8a;
+  --color-complementary-purple: #9261e6;
+  --color-complementary-purple-white: #9e73f8;
+  --color-complementary-light-blue: #00a8e0;
+  --color-complementary-light-blue-white: #00b6e0;
+  --color-complementary-black-1: #323337;
+  --color-complementary-black-2: #020202;
+  --color-complementary-gray: #efefef;
+  --color-complementary-surface: #fafafa;
+}
+body {
+  font-family: Carnas-Bold;
+}
+@font-face {
+  font-family: Carnas-Bold;
+  src: url(./fuente/Carnas-Bold.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Black-Italic;
+  src: url(./fuente/Carnas-Black-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Black;
+  src: url(./fuente/Carnas-Black.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Bold-Italic;
+  src: url(./fuente/Carnas-Bold-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Bold;
+  font-size: 13px;
+  src: url(./fuente/Carnas-Bold.ttf);
+}
+
+@font-face {
+  font-family: Carnas-ExtraBold-Italic;
+  src: url(./fuente/Carnas-ExtraBold-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-ExtraBold;
+  src: url(./fuente/Carnas-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Carnas-ExtraLight-Italic;
+  src: url(./fuente/Carnas-ExtraBold-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-ExtraLight;
+  src: url(./fuente/Carnas-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Italic;
+  src: url(./fuente/Carnas-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Light-Italic;
+  src: url(./fuente/Carnas-Light-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Light;
+  src: url(./fuente/Carnas-Light.ttf);
+}
+@font-face {
+  font-family: Carnas-Medium-Italic;
+  src: url(./fuente/Carnas-Medium-Italic.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Medium;
+  src: url(./fuente/Carnas-Medium.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Regular;
+  src: url(./fuente/Carnas-Regular.ttf);
+}
+@font-face {
+  font-family: Carnas-Thin;
+  src: url(./fuente/Carnas-Thin.ttf);
+}
+
+@font-face {
+  font-family: Carnas-Thin-Italic;
+  src: url(./fuente/Carnas-Thin-Italic.ttf);
+}
+
+p {
+  font-family: Carnas-Regular;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: Carnas-ExtraBold;
+  font-size: 500;
+}
+
+.color {
+  color: var(--color-primary);
+}
+
+.color2 {
+  color: var(--color-primary-dark);
+}
+
+.primary-button {
+  background: #ff565d;
+  box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+  border-radius: 4px;
+  border-color: #ff565d;
+  padding: 11px 38px;
+  font-weight: bold;
+  line-height: 16.77px;
+  font-size: 13px;
+  color: white;
+
+  font-family: Carnas-Light;
+  &:hover {
+    background: #ff7177;
+    border-color: #ff7177;
+    cursor: pointer;
+  }
+}
+
+.pressed-secondary-button {
+  border: 1px solid #323337;
+  box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #323337;
+  padding: 11px 38px;
+  font-weight: bold;
+
+  background-color: white;
+  font-family: Carnas-Light;
+
+  &:hover {
+    border-color: #323337;
+    color: #323337;
+    cursor: pointer;
+    background: white;
+  }
+}
+.secondary-button {
+  border: 1px solid #ff565d;
+  box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #ff565d;
+  padding: 11px 38px;
+  font-weight: bold;
+
+  background-color: white;
+  font-family: Carnas-Light;
+
+  &:hover {
+    border-color: #ff7177;
+    color: #ff7177;
+    cursor: pointer;
+    background: white;
+  }
+}
+
+.pressed-button {
+  background: #323337;
+  box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
+  border-radius: 4px;
+  background-color: #323337;
+  color: white;
+  padding: 11px 38px;
+  font-weight: bold;
+  font-family: Carnas-Light;
+}
+
+button:disabled {
+  color: white;
+  background-color: #b9b9b9;
+  box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
+  border-radius: 4px;
+  padding: 11px 38px;
+  font-weight: bold;
+  font-family: Carnas-Light;
+  border-color: #b9b9b9;
+  cursor: not-allowed;
+}

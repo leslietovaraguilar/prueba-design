@@ -40,7 +40,6 @@ body {
 
 @font-face {
   font-family: Carnas-Bold;
-  font-size: 13px;
   src: url(./fuente/Carnas-Bold.ttf);
 }
 
@@ -112,6 +111,25 @@ h1 {
   font-size: 500;
 }
 
+button {
+  font-family: Carnas-Bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  width: 160px;
+  height: 42px;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
 .color {
   color: var(--color-primary);
 }
@@ -124,95 +142,64 @@ h1 {
   background: #ff565d;
   box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
   border-radius: 4px;
-  border-color: #ff565d;
-  padding: 11px 38px;
-  font-weight: bold;
-  line-height: 16.77px;
-  font-size: 13px;
   color: white;
+  border: none;
 
-  font-family: Carnas-Light;
   &:hover {
     background: #ff7177;
-    border-color: #ff7177;
-    cursor: pointer;
   }
+
   &:focus {
     background: #323337;
-    border-color: #323337;
   }
 
   &:disabled {
     color: white;
     background-color: #b9b9b9;
-    box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
-    border-radius: 4px;
-    padding: 11px 38px;
-    font-weight: bold;
-    font-family: Carnas-Light;
-    border-color: #b9b9b9;
-    cursor: not-allowed;
+    box-shadow: none;
   }
 }
 
-.pressed-secondary-button {
-  border: 1px solid #323337;
-  box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
-  box-sizing: border-box;
-  border-radius: 4px;
-  color: #323337;
-  padding: 11px 38px;
-  font-weight: bold;
-
-  background-color: white;
-  font-family: Carnas-Light;
-
-  &:hover {
-    border-color: #323337;
-    color: #323337;
-    cursor: pointer;
-    background: white;
-  }
-}
 .secondary-button {
   border: 1px solid #ff565d;
-  box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
   box-sizing: border-box;
   border-radius: 4px;
   color: #ff565d;
-  padding: 11px 38px;
-  font-weight: bold;
-
   background-color: white;
-  font-family: Carnas-Light;
 
   &:hover {
     border-color: #ff7177;
     color: #ff7177;
-    cursor: pointer;
-    background: white;
+  }
+
+  &:focus {
+    border-color: #323337;
+    color: #323337;
+  }
+
+  &:disabled {
+    border-color: #b9b9b9;
+    color: #b9b9b9;
   }
 }
 
-.pressed-button {
-  background: #323337;
-  box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
-  border-radius: 4px;
-  background-color: #323337;
-  color: white;
-  padding: 11px 38px;
-  font-weight: bold;
-  font-family: Carnas-Light;
-}
+.terciary-button {
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: white;
+  color: rgba(255, 86, 93, 0.5);
 
-button:disabled {
-  color: white;
-  background-color: #b9b9b9;
-  box-shadow: 0px 2px 6px rgba(9, 142, 223, 0.3);
-  border-radius: 4px;
-  padding: 11px 38px;
-  font-weight: bold;
-  font-family: Carnas-Light;
-  border-color: #b9b9b9;
-  cursor: not-allowed;
+  &:hover {
+    color: #ff565d;
+  }
+
+  &:focus {
+    color: #323337;
+  }
+
+  &:disabled {
+    color: #b9b9b9;
+    opacity: 0.4;
+  }
 }

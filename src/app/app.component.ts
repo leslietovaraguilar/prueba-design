@@ -6,40 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-stepper';
-  current = 0;
-  index = 'First-content';
-  pre(): void {
-    this.current -= 1;
-    this.changeContent();
-  }
+  title = 'Courier-International';
+  isCollapsed = false;
 
-  next(): void {
-    this.current += 1;
-    this.changeContent();
-  }
-
-  done(): void {
-    console.log('done');
-  }
-
-  changeContent(): void {
-    switch (this.current) {
-      case 0: {
-        this.index = 'First-content';
-        break;
-      }
-      case 1: {
-        this.index = 'Second-content';
-        break;
-      }
-      case 2: {
-        this.index = 'third-content';
-        break;
-      }
-      default: {
-        this.index = 'error';
-      }
-    }
-  }
 }

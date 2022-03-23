@@ -8,15 +8,14 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    
     path: 'register',
-    loadChildren: ()=> import('./core/orders/register.module').then((m)=>m.RegisterModule)
+    loadChildren: () =>
+      import('./core/orders/register.module').then((m) => m.RegisterModule),
   },
-  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

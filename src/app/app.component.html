@@ -5,8 +5,7 @@
     nzWidth="256px"
     nzBreakpoint="md"
     [(nzCollapsed)]="isCollapsed"
-    [nzTrigger]="null"
-  >
+    [nzTrigger]="null">
     <div class="sidebar-logo">
       <a href="https://ng.ant.design/" target="_blank">
         <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo" />
@@ -18,12 +17,11 @@
       nz-menu
       nzTheme="dark"
       nzMode="inline"
-      [nzInlineCollapsed]="isCollapsed"
-    >
+      [nzInlineCollapsed]="isCollapsed">
       <li nz-submenu nzOpen nzTitle="Menu" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/register/a">Registar Form</a>
+            <a routerLink="/register">Registar Form</a>
           </li>
         </ul>
       </li>
@@ -36,15 +34,19 @@
           <i
             class="trigger"
             nz-icon
-            [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-          ></i>
+            [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </span>
       </div>
     </nz-header>
     <nz-content>
+      <nz-breadcrumb>
+        <nz-breadcrumb-item>{{ title }}</nz-breadcrumb-item>
+        <nz-breadcrumb-item>Register</nz-breadcrumb-item>
+      </nz-breadcrumb>
       <div class="inner-content">
         <router-outlet></router-outlet>
       </div>
     </nz-content>
+    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
   </nz-layout>
 </nz-layout>

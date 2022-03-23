@@ -20,10 +20,9 @@
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
-    "ng-zorro-antd": "^12.1.1",
-    "@ngneat/tailwind": "^7.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "ng-zorro-antd": "^12.1.1",
     "prettier": "^2.6.0",
     "prettier-eslint": "^13.0.0",
     "rxjs": "~6.6.0",
@@ -39,8 +38,6 @@
     "@angular-eslint/template-parser": "12.7.0",
     "@angular/cli": "~12.1.0",
     "@angular/compiler-cli": "~12.1.0",
-    "@tailwindcss/forms": "latest",
-    "@tailwindcss/typography": "latest",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.28.2",
@@ -52,7 +49,6 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "tailwindcss": "latest",
     "typescript": "~4.3.2"
   }
 }

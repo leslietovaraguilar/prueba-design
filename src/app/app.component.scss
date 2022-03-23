@@ -5,6 +5,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: Carnas-Regular;
+}
 .app-layout {
   height: 100vh;
 }
@@ -51,7 +54,6 @@
   color: black;
   font-weight: 600;
   font-size: 14px;
-  font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
   vertical-align: middle;
 }
 

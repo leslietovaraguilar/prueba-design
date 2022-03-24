@@ -13,8 +13,6 @@ import { NgZorroModule } from './shared/ngzorro/ng-zorro.module';
 
 import { SharedModule } from './shared/shared.module';
 
-
-
 registerLocaleData(es);
 
 @NgModule({
@@ -26,7 +24,7 @@ registerLocaleData(es);
     HttpClientModule,
     NgZorroModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

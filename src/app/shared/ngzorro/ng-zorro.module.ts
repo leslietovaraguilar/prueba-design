@@ -33,6 +33,7 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzStepsModule } from 'ng-zorro-antd/steps';
 registerLocaleData(locales);
 /*================ CONST ICONS ================*/
 
@@ -41,7 +42,7 @@ const antDesignIcons = AllIcons as {
 };
 
 const icons: IconDefinition[] = Object.keys(antDesignIcons).map(
-  (key) => antDesignIcons[key]
+  key => antDesignIcons[key]
 );
 
 const NG_ZORRO_COMPONENTS = [
@@ -68,6 +69,7 @@ const NG_ZORRO_COMPONENTS = [
   NzToolTipModule,
   NzFormModule,
   NzTableModule,
+  NzStepsModule,
 ];
 
 @NgModule({

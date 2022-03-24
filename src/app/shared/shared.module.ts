@@ -18,7 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 /*================ MODULES ================*/
 
-const SHARED_COMPONENTS = [ HeaderComponent, PageNotFoundComponent];
+const SHARED_COMPONENTS = [HeaderComponent, PageNotFoundComponent];
 
 @NgModule({
   declarations: [...SHARED_COMPONENTS],
